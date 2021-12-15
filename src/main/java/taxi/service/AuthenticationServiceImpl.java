@@ -13,7 +13,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     @Inject
     private DriverService driverService;
     private static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
-    String errorMsg = "Username or password incorrect";
+    private String errorMsg = "Username or password incorrect";
 
     @Override
     public Driver login(String login, String password) throws AuthenticationException {
